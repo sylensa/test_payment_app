@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:new_test/page_two.dart';
+import 'package:new_test/internation_transfer.dart';
 import 'package:new_test/utils/styles.dart';
 import 'package:new_test/widgets/custom_app_bar.dart';
 
@@ -268,7 +268,7 @@ class PageOne extends StatelessWidget {
                         context,
                         MaterialPageRoute(
                           builder: (context) {
-                            return const PageTwo();
+                            return const InternationTransfer();
                           },
                         ),
                       );
