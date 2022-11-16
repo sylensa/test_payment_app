@@ -3,7 +3,9 @@ import 'package:flutter/material.dart';
 class CustomAppBar extends StatelessWidget {
   final String title;
   final Widget trailing;
-  const CustomAppBar({Key? key, required this.title, required this.trailing})
+  final IconData? leadingIcon;
+  const CustomAppBar(
+      {Key? key, required this.title, required this.trailing, this.leadingIcon})
       : super(key: key);
 
   @override
@@ -13,7 +15,12 @@ class CustomAppBar extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          const Icon(Icons.arrow_back),
+          IconButton(
+            icon: Icon(leadingIcon ?? Icons.arrow_back),
+            onPressed: () {
+              Navigator.pop(context);
+            },
+          ),
           Text(
             title,
             style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 16),

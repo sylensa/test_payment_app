@@ -13,6 +13,7 @@ class InternationTransfer extends StatelessWidget {
         child: Column(
           children: [
             const CustomAppBar(
+              leadingIcon: Icons.close,
               title: "International Transfer",
               trailing: Icon(Icons.help_outline_rounded),
             ),
@@ -192,7 +193,9 @@ class InternationTransfer extends StatelessWidget {
                       ],
                     ),
                     child: ListTile(
-                      leading: const CircleAvatar(),
+                      leading: const CircleAvatar(
+                        backgroundImage: AssetImage("images/profile_image.png"),
+                      ),
                       title: const Text(
                         "Jane Smith",
                         style: TextStyle(

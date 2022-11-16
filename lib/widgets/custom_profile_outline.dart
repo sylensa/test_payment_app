@@ -25,7 +25,9 @@ class ProfileOutline extends StatelessWidget {
           color: customLightBlue,
           shape: BoxShape.circle,
         ),
-        child: CircleAvatar(),
+        child: CircleAvatar(
+          backgroundImage: AssetImage("images/image_profile.png"),
+        ),
       ),
     );
   }
