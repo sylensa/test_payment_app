@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:new_test/home_page.dart';
 import 'package:new_test/utils/styles.dart';
 import 'package:new_test/widgets/custom_app_bar.dart';
 
@@ -174,14 +175,14 @@ class ProofIdentity extends StatelessWidget {
                     ),
                     GestureDetector(
                       onTap: () {
-                        // Navigator.push(
-                        //   context,
-                        //   MaterialPageRoute(
-                        //     builder: (context) {
-                        //       return const ProofIdentity();
-                        //     },
-                        //   ),
-                        // );
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) {
+                              return const HomePage();
+                            },
+                          ),
+                        );
                       },
                       child: DecoratedBox(
                         decoration: BoxDecoration(
