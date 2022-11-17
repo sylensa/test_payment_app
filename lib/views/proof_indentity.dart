@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:new_test/home_page.dart';
+import 'package:new_test/views/home_page.dart';
 import 'package:new_test/utils/styles.dart';
 import 'package:new_test/widgets/custom_app_bar.dart';
 

@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:new_test/proof_indentity.dart';
+import 'package:new_test/views/proof_indentity.dart';
 import 'package:new_test/widgets/custom_app_bar.dart';
 
 class InternationTransfer extends StatelessWidget {
